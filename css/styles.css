@@ -9,8 +9,7 @@
 --button-color: #4d5ae5;
 --white-background-color: #ffffff;
 --ocean-background-color: #404BBF;
---indent: 24px;
---items: 3;
+
 }
 
 body {
@@ -51,19 +50,13 @@ image {
     cursor: pointer;
 }
 
-/*.container {
-    width: 1128px;
-    margin: 0 auto;
-    padding: 0 15px;
-}*/
-
 /*---header---*/
 
 .header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-                 0px 1px 1px rgba(46, 47, 66, 0.16), 
-                 0px 1px 6px rgba(46, 47, 66, 0.08);
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-address {
     font-weight: 800;
@@ -118,7 +111,7 @@ image {
 .header-item-link::after {
     content: ''; 
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
     display: block;
     width: 100%;
@@ -269,7 +262,6 @@ image {
 /*--section-TEAM--*/
 
 .section-team {
-
     background-color: #F4F4FD ;
     padding: 120px 0;
 }
@@ -307,7 +299,9 @@ image {
 
 .section-team-item {
     background: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px; 
     flex-basis: calc(100% - 72px / 4);  
 }
@@ -456,9 +450,11 @@ image {
     ;
 }
 
-
-
-/*-----------PORTFOLIO-------------*/
+/**
+  |============================
+  | ----------PORTFOLIO-------
+  |============================
+*/
 
 /*---logo---*/
 
@@ -609,7 +605,7 @@ img {
       |============================
     */
 .backdrop {
-    display: none;
+   /* display: none;*/
     position: fixed;
     top: 0;
     left: 0;
@@ -646,5 +642,52 @@ img {
     background-color: #E7E9FC;
     padding: 0;
 }
-.modal-close-icon {
+
+
+/**
+  |============================
+  |    Overlay
+  |============================
+*/
+.img-thumb {
+    position: relative;
+    overflow: hidden;
 }
+.overlay {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px 32px;
+    color: var(--background-color);
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-brand-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-item-pic:hover .overlay
+.section-item-pic:focus .overlay  {
+    transform: translate(0, 0);
+}
+
+/**
+  |============================
+  | skript
+  |============================
+*/
+
+.header.no-transparency {
+    background-color: rgb(67, 68, 85, 0.5);
+    backdrop-filter: blur(2px);
+}
+ .is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+ }

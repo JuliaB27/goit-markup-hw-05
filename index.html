@@ -46,7 +46,7 @@
       <section class="main-section">
         <div class="hero-container container">     
             <h1 class="main-title">Effective Solutions for Your Business</h1>
-            <button type="button" class="main-btn button">Order Service</button>
+            <button type="button" class="main-btn button" data-modal-open>Order Service</button>
         </div>     
       </section>
 
@@ -420,15 +420,15 @@
       |  Modal Window
       |============================
     */
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="modal-close-btn">
+        <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
       </div>
     </div>
-c
+    <script src="./JS/modal.js"></script>
   </body>
 </html>
