@@ -641,6 +641,7 @@ img {
       |  Modal Window
       |============================
     */
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -667,6 +668,7 @@ img {
     transition: transform 250ms 
                 cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-close-btn {
     position: absolute;
     top: 24px;
@@ -678,20 +680,37 @@ img {
     height: 24px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #E7E9FC;
+    background: #E7E9FC;
     padding: 0;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+/*.modal-btn-close {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    transition: background var(--transition-dur-timing-func), border-radius var(--transition-dur-timing-func);
+}*/
 
-.modal-close-btn:hover
-.modal-close-btn:focus {
+.modal-close-icon:hover
+.modal-close-icon:focus {
     background-color: #404bbf;
     border: none;
     fill: #ffffff;
 }
 .modal-close-icon {
+    fill: #2e2f42;
     transition: fill 250ms 
                 cubic-bezier(0.4, 0, 0.2, 1);
 }
