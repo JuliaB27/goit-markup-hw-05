@@ -116,7 +116,7 @@ image {
 .active {
    color: #404bbf; 
  }
-.studio-page::after {
+.active::after {
     content: ''; 
     position: absolute;
     bottom: -1px;
