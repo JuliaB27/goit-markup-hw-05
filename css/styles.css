@@ -116,7 +116,7 @@ image {
 .active {
    color: #404bbf; 
  }
-.header-item-link::after {
+.studio-page::after {
     content: ''; 
     position: absolute;
     bottom: -1px;
@@ -547,7 +547,7 @@ image {
     color: #404bbf; 
 }
 
-.header-item-link::after {
+.portfolio-page::after {
     content: ''; 
     position: absolute;
     bottom: -1px;
