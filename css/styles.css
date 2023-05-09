@@ -77,10 +77,9 @@ image {
     position: relative;
     padding: 24px 0;
     gap: 40px;
-    color: #404bbf;
+    /*color: #404bbf;*/
     transition: color var(--transition--dur-timing-function);
 }
-
 
 .header-address-list {
     gap: 40px;
@@ -103,7 +102,7 @@ image {
     align-items: center;
     margin-left: auto;
     gap: 40px;
-    color: #404bbf; 
+    /*color: #404bbf; */
 }
 
 .container {
@@ -112,7 +111,7 @@ image {
     padding: 0 15px;
 } 
 
-.active::after {
+.studio-page::after {
     content: ''; 
     position: absolute;
     bottom: -1px;
@@ -137,14 +136,14 @@ image {
   /*  background-color: #404bbf; */
 
 
-.header-item-link.active::after{
+/*.header-item-link.active::after{
     background-color:  #404bbf;
 }
 
 
  .active {
    color: #404bbf; 
- }
+ }*/
 
 
  /* --Hero image--*/
@@ -523,7 +522,7 @@ image {
     
 }
 
-.active::after {
+.portfolio-page::after {
     content: ''; 
     position: absolute;
     bottom: -1px;
