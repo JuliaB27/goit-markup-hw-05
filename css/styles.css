@@ -547,7 +547,7 @@ image {
     color: #404bbf; 
 }
 
-.portfolio-page::after {
+.active::after {
     content: ''; 
     position: absolute;
     bottom: -1px;
