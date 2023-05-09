@@ -77,7 +77,6 @@ image {
     position: relative;
     padding: 24px 0;
     gap: 40px;
-    /*color: #404bbf;*/
     transition: color var(--transition--dur-timing-function);
 }
 
@@ -102,9 +101,8 @@ image {
     align-items: center;
     margin-left: auto;
     gap: 40px;
-    /*color: #404bbf; */
+    color: #404bbf; 
 }
-
 .container {
     margin: 0 auto;
     width: 1158px;
@@ -115,6 +113,9 @@ image {
     color: #404bbf;
 }
 
+.active {
+   color: #404bbf; 
+ }
 .studio-page::after {
     content: ''; 
     position: absolute;
@@ -124,30 +125,8 @@ image {
     width: 100%;
     height: 4px;
     border-radius: 2px; 
-    background-color: #404bbf;
-   /*color:#404bbf;*/
+    background: #404bbf;   
 }
-
-/*.header-item-link::after {
-    content: ''; 
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px; 
-  /*  background-color: #404bbf; */
-
-
-/*.header-item-link.active::after{
-    background-color:  #404bbf;
-}
-*/
-
- /*.active {
-   color: #404bbf; 
- }*/
 
 
  /* --Hero image--*/
@@ -394,8 +373,7 @@ image {
     width: 168px;
     height: 88px;
     width: calc((100% - 120px) / 6);
-    /*transition: border-color var(--transition--dur-timing-function), 
-                color var(--transition--dur-timing-function);*/
+    
 }
 .customers-item-link {
     display: flex;
@@ -526,18 +504,7 @@ image {
     
 }
 
-.portfolio-page::after {
-    content: ''; 
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px; 
-    background-color: #404bbf;
-   /* color:#404bbf;*/
-}
+
 
 .header-item-link {
     font-style: normal;
@@ -578,6 +545,18 @@ image {
    text-decoration: none;
 }
 
+.portfolio-page::after {
+    content: ''; 
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px; 
+    background-color: #404bbf;
+   
+}
 
 /*---BUTTON---*/
 
